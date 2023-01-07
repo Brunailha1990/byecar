@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Carrossel</title>
+</head>
+
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="DNC - ByeCar">
+        <h1>ByeCar</h1>
+    </header>
+
+    <main class="container">
+        <div class="chamada">
+            <p>Ter <strong>uma moto</strong> por assinatura nunca foi tão fácil!</p>
+            <img src="imagens/moto_frente.jpg" width="100%" alt="Moto de frente">
+        </div>
+        <div class="produtos">
+            <p>Conheça nossas <strong>motos</strong>!</p>
+            <img src="imagens/botao-anterior.png" class="botao-carrossel botao-anterior" onClick="voltarFoto();" />
+            <ul class="motos">
+                <li class="moto">
+                    <p class="nome">Scooter Elétrica Voltz EV1</p>
+                    <img src="imagens/scooter.png" alt="Scooter Elétrica Voltz EV1">
+                    <div class="preco">
+                        <p>A partir de</p>
+                        <p class="valor">R$ 619,90</p>
+                        <small>Plano de 30 meses</small>
+                    </div>
+                </li>
+                <li class="moto">
+                    <p class="nome">Honda CB 500X</p>
+                    <img src="imagens/honda.png" alt="Honda CB 500X">
+                    <div class="preco">
+                        <p>A partir de</p>
+                        <p class="valor">R$ 619,90</p>
+                        <small>Plano de 30 meses</small>
+                    </div>
+                </li>
+            </ul>
+            <img src="imagens/botao-proximo.png" class="botao-carrossel botao-proximo" onClick="avancarFoto();" />
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #303030;
+    font-family: 'Raleway';
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.container {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.container .chamada {
+    padding: 15px;
+    font-family: 'Verdana';
+    font-size: 28px;
+    text-align: center;
+    color: #265E70;
+}
+
+.container .chamada img {
+    max-width: 100%;
+    margin: auto;
+}
+
+.container .produtos {
+    color: #265E70;
+    text-align: center;
+    font-family: 'Verdana';
+    font-size: 36px;
+    position: relative;
+}
+
+.container .produtos strong {
+    color: #4DBCE9;
+}
+
+.container .produtos .botao-carrossel {
+    position: absolute;
+    top: 380px;
+    left: 10px;
+    right: auto;
+    background-color: white;
+    margin-top: -19px;
+    cursor: pointer;
+}
+
+.container .produtos .botao-carrossel.botao-proximo {
+    left: auto;
+    right: 10px;
+}
+
+.motos {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    font-family: 'Verdana';
+    width: 100%;
+    overflow: hidden;
+    width: 85%;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.moto {
+    background: rgba(77, 188, 233, 0.75);
+    color: white;
+    text-align: center;
+    width: 100%;
+    flex: 1 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.moto .nome {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.moto .preco p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.moto .preco .valor {
+    font-size: 27px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    color: #265E70;
+    padding: 5px 10px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.moto small {
+    display: block;
+}
